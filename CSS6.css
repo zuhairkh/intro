@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+header {
+	  background-color: #FF4500;
+	  font-weight:bold;
+	  color:#00ff00;
+	  font-family:Georgia, serif;
+	  text-align: left;
+  }
+
+body {
+  background-color:#ADD8E6;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+/* Style the navigation bar */
+.navbar {
+border-color:#B73239;
+background-color: #B73239;
+overflow: auto;
+}
+
+/* Navbar links */
+
+.navbar a {
+border: 2px outset rgb(211, 211, 255);
+ float: left;
+ text-align: center;
+ padding:10px;
+ color: black;
+ text-decoration: none;
+ font-size: 20px;
+font-family:grunge, Helvetica, sans-serif;
+font-weight:bold;
+}
+
+/* Navbar links on mouse-over */
+
+.navbar a:hover {
+ background-color: #B22222;
+}
+nav a {
+
+font-family:grunge, Helvetica, sans-serif;
+
+color:white;
+}
+
+nav a:link, nav:visited{
+color:white;
+text-decoration:none;
+background-color: #8B0000;
+
+}
+
+nav a:hover,nav a:active{
+color:  #555;
+backround-color:white;
+}
+
+/* Current/active navbar link */
+
+.active {
+ background-color: #ADD8E6;
+}
+footer {
+text-align: center;
+background-color: #FFF200;
+border: 5px outset rgb(153, 5, 0);
+color: black;
+font-size: 1.5em;
+font-family: Helvetica, sans-serif;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
